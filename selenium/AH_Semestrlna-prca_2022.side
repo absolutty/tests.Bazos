@@ -1,0 +1,592 @@
+{
+  "id": "883886e2-d33e-4481-b0cd-044b722c31b3",
+  "version": "2.0",
+  "name": "AH_Semestrálna-práca_2022",
+  "url": "bazos.sk",
+  "tests": [{
+    "id": "c9773e1f-2b7c-4eed-88fe-d5832939da38",
+    "name": "search_sucessfull",
+    "commands": [{
+      "id": "71650cae-ff7b-4400-9dfe-afdf0890938c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.bazos.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03fa425c-affa-456f-bac2-f08389e5bc9f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "989x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e165f52f-e43e-424b-b9d0-9ca39d9f8e1a",
+      "comment": "",
+      "command": "type",
+      "target": "id=hledat",
+      "targets": [
+        ["id=hledat", "id"],
+        ["name=hledat", "name"],
+        ["css=#hledat", "css:finder"],
+        ["xpath=//input[@id='hledat']", "xpath:attributes"],
+        ["xpath=//form[@id='formt']/div/div/b/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pes"
+    }, {
+      "id": "6569a5ee-c304-45db-a8b5-e8d1af328d92",
+      "comment": "",
+      "command": "click",
+      "target": "name=Submit",
+      "targets": [
+        ["name=Submit", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='Submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formt']/div/div/b/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2864c8f8-4f0c-4efa-995d-1f108dba27f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inzeraty:nth-child(5) .nadpis > a",
+      "targets": [
+        ["linkText=BMW 740LD Xdrive G12 Luxury Line", "linkText"],
+        ["css=.inzeraty:nth-child(5) .nadpis > a", "css:finder"],
+        ["xpath=//a[contains(text(),'BMW 740LD Xdrive G12 Luxury Line')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://auto.bazos.sk/inzerat/146445703/bmw-740ld-xdrive-g12-luxury-line.php')])[2]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BMW 740LD Xdrive G12 Luxury Line')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d0dcabf5-6144-4a34-8c8e-4dc9b3f5873b",
+    "name": "search_unsucessfull",
+    "commands": [{
+      "id": "9b4b6cfb-a119-423a-99b4-87e50cdd8cb5",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.bazos.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b714dda-84ec-476e-b49a-e004ccf4d58b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "989x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96bc4dbc-d732-4d95-a659-e06e1116e3df",
+      "comment": "",
+      "command": "type",
+      "target": "id=hledat",
+      "targets": [
+        ["id=hledat", "id"],
+        ["name=hledat", "name"],
+        ["css=#hledat", "css:finder"],
+        ["xpath=//input[@id='hledat']", "xpath:attributes"],
+        ["xpath=//form[@id='formt']/div/div/b/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pes s dáždnikom"
+    }, {
+      "id": "d320f9e4-3897-4cfc-8d70-33c1952e25c3",
+      "comment": "",
+      "command": "click",
+      "target": "name=Submit",
+      "targets": [
+        ["name=Submit", "name"],
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@name='Submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formt']/div/div/b/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8a4cd5fe-a169-4099-985f-c4f66feba361",
+    "name": "translation_czech",
+    "commands": [{
+      "id": "814c3ad9-0f59-4c90-9e11-953ac93c39c0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.bazos.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62b6b4ca-e35c-44cd-88aa-15a60b649bf6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "989x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6547bb70-cb53-4dce-8b64-33ebc6d26850",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Česká republika",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b294c9cb-cc1b-413e-8dc2-122ea65ef96a",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.pridati",
+      "targets": [
+        ["css=.pridati", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Přidat inzerát')]", "xpath:innerText"]
+      ],
+      "value": "pridat_text"
+    }, {
+      "id": "63bed3a6-f738-459c-984f-5451f6461078",
+      "comment": "",
+      "command": "verify",
+      "target": "pridat_text",
+      "targets": [],
+      "value": "Přidat inzerát"
+    }]
+  }, {
+    "id": "346c1cbd-454f-4ab6-a430-72371945aac0",
+    "name": "translation_polish",
+    "commands": [{
+      "id": "4e172fb3-9dbf-4512-9c3f-7dd25d632df7",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.bazos.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9457cc2-ff92-4937-ab82-dd3c50adabd2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "989x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d9b06ed-278f-4ce9-a1dd-3159fea083a3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Poľsko",
+      "targets": [
+        ["linkText=Poľsko", "linkText"],
+        ["css=a:nth-child(32)", "css:finder"],
+        ["xpath=//a[contains(text(),'Poľsko')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.bazos.pl')]", "xpath:href"],
+        ["xpath=//a[15]", "xpath:position"],
+        ["xpath=//a[contains(.,'Poľsko')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "283d4919-d650-402f-88e7-189bc8b27c66",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.pridati",
+      "targets": [],
+      "value": "pridat_text"
+    }, {
+      "id": "9e04dc0a-8bc6-4cf7-a7a9-041b8b208f10",
+      "comment": "",
+      "command": "verify",
+      "target": "pridat_text",
+      "targets": [],
+      "value": "Dodaj darmowe ogłoszenie"
+    }]
+  }, {
+    "id": "765ee6f3-d39f-4588-8afc-2b91f443e996",
+    "name": "translation_austria",
+    "commands": [{
+      "id": "3dfcbb21-6d4a-45ab-bfdb-e2d531f4856e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.bazos.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bad4c77-89ff-47c6-8320-12a5226583c9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "989x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "002ac9c8-6a1b-47d5-b0ab-af8e7b476096",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Rakúsko",
+      "targets": [
+        ["linkText=Česká republika", "linkText"],
+        ["css=a:nth-child(31)", "css:finder"],
+        ["xpath=//a[contains(text(),'Česká republika')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.bazos.cz')]", "xpath:href"],
+        ["xpath=//a[14]", "xpath:position"],
+        ["xpath=//a[contains(.,'Česká republika')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49dda85c-40e3-4b50-9d18-8945816a042e",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.pridati",
+      "targets": [
+        ["css=.pridati", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Přidat inzerát')]", "xpath:innerText"]
+      ],
+      "value": "pridat_text"
+    }, {
+      "id": "cc3d3920-daf0-479d-a43e-b9dbad625310",
+      "comment": "",
+      "command": "verify",
+      "target": "pridat_text",
+      "targets": [],
+      "value": "Anzeige aufgeben"
+    }]
+  }, {
+    "id": "165e180f-4573-4460-9070-deb0fda34b07",
+    "name": "pagesize_bike (LIST)",
+    "commands": [{
+      "id": "30eafbec-96b4-46d4-a551-36d2dc0da0b3",
+      "comment": "",
+      "command": "open",
+      "target": "https://motocykle.bazos.sk/?gal=l",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "141e919b-8267-4a65-8a36-06b2c0c1c45d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "989x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5075e0c6-fe00-46a7-a152-0d4b0464897f",
+      "comment": "prvy element existuje (index 5)",
+      "command": "click",
+      "target": "css=.inzeraty:nth-child(5) .nadpis > a",
+      "targets": [
+        ["linkText=BMW 740LD Xdrive G12 Luxury Line", "linkText"],
+        ["css=.inzeraty:nth-child(5) .nadpis > a", "css:finder"],
+        ["xpath=//a[contains(text(),'BMW 740LD Xdrive G12 Luxury Line')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://auto.bazos.sk/inzerat/146445703/bmw-740ld-xdrive-g12-luxury-line.php')])[2]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BMW 740LD Xdrive G12 Luxury Line')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50178d63-8aac-4f2a-9ac2-7e30558d7a79",
+      "comment": "go back",
+      "command": "executeScript",
+      "target": "window.history.go(-1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bcd4bafc-fa67-44cc-bc99-8e9200b1df96",
+      "comment": "posledny element existuje (index 24)",
+      "command": "click",
+      "target": "css=.inzeraty:nth-child(24) .nadpis > a",
+      "targets": [
+        ["linkText=Jawa 350 634, prvy model", "linkText"],
+        ["css=.inzeraty:nth-child(24) .nadpis > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Jawa 350 634, prvy model')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/inzerat/146274894/jawa-350-634-prvy-model.php')])[2]", "xpath:href"],
+        ["xpath=//div[23]/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Jawa 350 634, prvy model')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f2a2932a-d245-481b-9abc-314f21b3ed68",
+    "name": "pagesize_bike (TILES)",
+    "commands": [{
+      "id": "d48739d8-6c07-496b-a954-5f177bc35bb1",
+      "comment": "",
+      "command": "open",
+      "target": "https://motocykle.bazos.sk/?gal=g",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e71a231a-fc48-4d5b-9938-fc3ea55aa619",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "989x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d79033f-305c-4d42-bcd3-7f5a02931947",
+      "comment": "prvy element existuje (index 1)",
+      "command": "click",
+      "target": "css=.galleryobal:nth-child(1) > .gallerytxt > a",
+      "targets": [
+        ["linkText=Ducati X Diavel S Black Star", "linkText"],
+        ["css=.galleryobal:nth-child(1) > .gallerytxt > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ducati X Diavel S Black Star')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/inzerat/146141891/ducatti-x-diavel-1260.php')])[2]", "xpath:href"],
+        ["xpath=//span[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ducati X Diavel S Black Star')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62493de7-4600-46c7-9ed0-497cef739a3e",
+      "comment": "go back",
+      "command": "executeScript",
+      "target": "window.history.go(-1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41d568a0-bc7a-43a5-b6d8-c123376b66a0",
+      "comment": "posledny element existuje (index 60)",
+      "command": "click",
+      "target": "css=.galleryobal:nth-child(60) > .gallerytxt > a",
+      "targets": [
+        ["linkText=Oreginal plasty Sixdays 2019 250tpi", "linkText"],
+        ["css=.galleryobal:nth-child(60) > .gallerytxt > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Oreginal plasty Sixdays 2019 250tpi')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/inzerat/146450310/oreginal-plasty-sixdays-2019-250tpi.php')])[2]", "xpath:href"],
+        ["xpath=//span[60]/span[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Oreginal plasty Sixdays 2019 250tpi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d3546426-69f7-43d7-b328-99e163e9167c",
+    "name": "pagesize_pc (LIST)",
+    "commands": [{
+      "id": "32ab9eb5-1914-4bc8-ac5f-7b58a896777e",
+      "comment": "",
+      "command": "open",
+      "target": "https://pc.bazos.sk/?gal=l",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "963a601a-217a-449c-9d82-dc9fcd897d73",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "989x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a895c23a-415e-47eb-a45e-5eb8a76f5cf8",
+      "comment": "prvy element existuje (index 5)",
+      "command": "click",
+      "target": "css=.inzeraty:nth-child(5) .nadpis > a",
+      "targets": [
+        ["linkText=BMW 740LD Xdrive G12 Luxury Line", "linkText"],
+        ["css=.inzeraty:nth-child(5) .nadpis > a", "css:finder"],
+        ["xpath=//a[contains(text(),'BMW 740LD Xdrive G12 Luxury Line')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://auto.bazos.sk/inzerat/146445703/bmw-740ld-xdrive-g12-luxury-line.php')])[2]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BMW 740LD Xdrive G12 Luxury Line')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d6e7dff-1689-4e92-84ea-fd1fadfd6d44",
+      "comment": "go back",
+      "command": "executeScript",
+      "target": "window.history.go(-1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f01588d8-1b06-42fe-b9f7-ab89c3ef12ef",
+      "comment": "posledny element existuje (index 24)",
+      "command": "click",
+      "target": "css=.inzeraty:nth-child(24) .nadpis > a",
+      "targets": [
+        ["linkText=Jawa 350 634, prvy model", "linkText"],
+        ["css=.inzeraty:nth-child(24) .nadpis > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Jawa 350 634, prvy model')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/inzerat/146274894/jawa-350-634-prvy-model.php')])[2]", "xpath:href"],
+        ["xpath=//div[23]/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Jawa 350 634, prvy model')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "50723449-d5b0-4a9d-9b91-41b57c4ab87c",
+    "name": "pagesize_pc (TILES)",
+    "commands": [{
+      "id": "25211ba4-caef-4888-8761-82f7682775ff",
+      "comment": "",
+      "command": "open",
+      "target": "https://pc.bazos.sk/?gal=g",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb70499f-8e29-499c-b5a0-aec13311f001",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "989x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d776ba92-6aec-4cc0-8ca3-a43f16b35e84",
+      "comment": "prvy element existuje (index 1)",
+      "command": "click",
+      "target": "css=.galleryobal:nth-child(1) > .gallerytxt > a",
+      "targets": [
+        ["linkText=Ducati X Diavel S Black Star", "linkText"],
+        ["css=.galleryobal:nth-child(1) > .gallerytxt > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ducati X Diavel S Black Star')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/inzerat/146141891/ducatti-x-diavel-1260.php')])[2]", "xpath:href"],
+        ["xpath=//span[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ducati X Diavel S Black Star')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67d545ff-17fe-41cc-bfbd-9f22bce5ba80",
+      "comment": "go back",
+      "command": "executeScript",
+      "target": "window.history.go(-1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "217720d7-b214-4629-96e0-2f51872eb871",
+      "comment": "posledny element existuje (index 60)",
+      "command": "click",
+      "target": "css=.galleryobal:nth-child(60) > .gallerytxt > a",
+      "targets": [
+        ["linkText=Oreginal plasty Sixdays 2019 250tpi", "linkText"],
+        ["css=.galleryobal:nth-child(60) > .gallerytxt > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Oreginal plasty Sixdays 2019 250tpi')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/inzerat/146450310/oreginal-plasty-sixdays-2019-250tpi.php')])[2]", "xpath:href"],
+        ["xpath=//span[60]/span[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Oreginal plasty Sixdays 2019 250tpi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "113871e5-c1b7-410e-85b0-550417a4fc86",
+    "name": "pagesize_realestate (LIST)",
+    "commands": [{
+      "id": "cf24932a-2abc-47ac-9e80-2dc5c67c8c71",
+      "comment": "",
+      "command": "open",
+      "target": "https://reality.bazos.sk/?gal=l",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c496986-101e-401e-93fe-9a5dca4a4d91",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "989x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7cfab40d-cd4d-4324-a8f3-473e9ba79454",
+      "comment": "prvy element existuje (index 5)",
+      "command": "click",
+      "target": "css=.inzeraty:nth-child(5) .nadpis > a",
+      "targets": [
+        ["linkText=BMW 740LD Xdrive G12 Luxury Line", "linkText"],
+        ["css=.inzeraty:nth-child(5) .nadpis > a", "css:finder"],
+        ["xpath=//a[contains(text(),'BMW 740LD Xdrive G12 Luxury Line')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://auto.bazos.sk/inzerat/146445703/bmw-740ld-xdrive-g12-luxury-line.php')])[2]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BMW 740LD Xdrive G12 Luxury Line')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dbc66d2-abdd-4c2b-ba6b-2b00a2091a60",
+      "comment": "go back",
+      "command": "executeScript",
+      "target": "window.history.go(-1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8b0b60d-86cb-4844-b5fc-edc3cc333a2b",
+      "comment": "posledny element existuje (index 24)",
+      "command": "click",
+      "target": "css=.inzeraty:nth-child(24) .nadpis > a",
+      "targets": [
+        ["linkText=Jawa 350 634, prvy model", "linkText"],
+        ["css=.inzeraty:nth-child(24) .nadpis > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Jawa 350 634, prvy model')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/inzerat/146274894/jawa-350-634-prvy-model.php')])[2]", "xpath:href"],
+        ["xpath=//div[23]/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Jawa 350 634, prvy model')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b5fc7222-b815-4ede-93c9-22bfdce4858c",
+    "name": "pagesize_realestate (TILES)",
+    "commands": [{
+      "id": "f19d204d-6cdc-4d3f-9802-ffb2fae19e1b",
+      "comment": "",
+      "command": "open",
+      "target": "https://reality.bazos.sk/?gal=g",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "345f6c9b-4c03-4aaf-b823-e89bf936421a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "989x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8348791-78b2-4ccc-9d48-b7578f56d233",
+      "comment": "prvy element existuje (index 1)",
+      "command": "click",
+      "target": "css=.galleryobal:nth-child(1) > .gallerytxt > a",
+      "targets": [
+        ["linkText=Ducati X Diavel S Black Star", "linkText"],
+        ["css=.galleryobal:nth-child(1) > .gallerytxt > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ducati X Diavel S Black Star')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/inzerat/146141891/ducatti-x-diavel-1260.php')])[2]", "xpath:href"],
+        ["xpath=//span[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ducati X Diavel S Black Star')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53f2cddc-b67f-405d-be62-ebd844f4e5e3",
+      "comment": "go back",
+      "command": "executeScript",
+      "target": "window.history.go(-1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9daff209-e1d6-40cb-b33a-e5ed1cbcaa38",
+      "comment": "posledny element existuje (index 60)",
+      "command": "click",
+      "target": "css=.galleryobal:nth-child(60) > .gallerytxt > a",
+      "targets": [
+        ["linkText=Oreginal plasty Sixdays 2019 250tpi", "linkText"],
+        ["css=.galleryobal:nth-child(60) > .gallerytxt > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Oreginal plasty Sixdays 2019 250tpi')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/inzerat/146450310/oreginal-plasty-sixdays-2019-250tpi.php')])[2]", "xpath:href"],
+        ["xpath=//span[60]/span[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Oreginal plasty Sixdays 2019 250tpi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8ec21887-fdda-4648-af98-c63307b109c1",
+    "name": "search",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c9773e1f-2b7c-4eed-88fe-d5832939da38", "d0dcabf5-6144-4a34-8c8e-4dc9b3f5873b"]
+  }, {
+    "id": "ea8648a5-4dec-4008-93df-50cd2b5616ad",
+    "name": "translation",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8a4cd5fe-a169-4099-985f-c4f66feba361", "346c1cbd-454f-4ab6-a430-72371945aac0", "765ee6f3-d39f-4588-8afc-2b91f443e996"]
+  }, {
+    "id": "3f42afe1-5a42-45bc-8780-e94cb900a860",
+    "name": "pagesize",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["165e180f-4573-4460-9070-deb0fda34b07", "f2a2932a-d245-481b-9abc-314f21b3ed68", "d3546426-69f7-43d7-b328-99e163e9167c", "50723449-d5b0-4a9d-9b91-41b57c4ab87c", "113871e5-c1b7-410e-85b0-550417a4fc86", "b5fc7222-b815-4ede-93c9-22bfdce4858c"]
+  }],
+  "urls": ["https://github.com/absolutty/java.DobrodruznaHra", "https://www.bazos.sk/", "https://motocykle.bazos.sk/?gal=l", "https://motocykle.bazos.sk/?gal=g", "https://pc.bazos.sk/?gal=l", "https://pc.bazos.sk/?gal=g"],
+  "plugins": []
+}
