@@ -10,6 +10,7 @@ public class SearchTest extends ParentTest {
 
     @Test
     public void searchOfExisting() {
+        driver.get("https://www.bazos.sk/");
         driver.findElement(By.id("hledat")).sendKeys("pes");
         driver.findElement(By.name("Submit")).click();
         driver.findElement(By.cssSelector(".inzeraty:nth-child(5) .nadpis > a")).click();
@@ -17,6 +18,7 @@ public class SearchTest extends ParentTest {
 
     @Test
     public void searchOfNotExisting() {
+        driver.get("https://www.bazos.sk/");
         driver.findElement(By.id("hledat")).sendKeys("pes s dáždnikom");
         driver.findElement(By.name("Submit")).click();
         try {
